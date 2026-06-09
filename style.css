@@ -532,3 +532,8 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
+.hero{
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+}
