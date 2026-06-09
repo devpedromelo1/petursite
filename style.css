@@ -115,15 +115,20 @@ nav a:hover{
 .hero{
     min-height:100vh;
     background:
-    linear-gradient(rgba(250, 250, 250, 0.419),
-    rgba(250, 250, 250, 0.419)),
-    url("img/banner.jpg");
+    linear-gradient(
+    rgba(254,207,150,.43),
+    rgba(254,207,150,.43)),
+    url("img/banner-desktop.jpg");
+
     background-size:cover;
-    background-position:center;
+    background-position:center center;
+    background-repeat:no-repeat;
+
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
+
     padding:120px 20px;
 }
 
@@ -532,13 +537,22 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
-@media (max-width: 768px){
+@media (max-width:768px){
 
     .hero{
-        min-height:70vh;
-        background-size:100% auto;
-        background-position:top center;
+
+        min-height:80vh;
+
+        background:
+        linear-gradient(
+        rgba(254,207,150,.43),
+        rgba(254,207,150,.43)),
+        url("img/banner-mobile.jpg");
+
+        background-size:cover;
+        background-position:center center;
         background-repeat:no-repeat;
+
     }
 
 }
