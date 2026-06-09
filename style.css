@@ -532,8 +532,15 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
-.hero{
-    min-height:100vh;
-    background-size:cover;
-    background-position:center;
+@media(max-width:768px){
+
+    .hero{
+        min-height:75vh;
+        background-position:center center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
 }
