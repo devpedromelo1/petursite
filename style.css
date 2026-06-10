@@ -293,33 +293,29 @@ nav a:hover{
    SERVIÇOS
 ========================== */
 
-.servicos{
-    padding:100px 0;
-}
-
 .servicos-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .servico{
-    background:white;
-    padding:40px;
-    text-align:center;
+    background:#fff;
+    padding:30px 20px;
     border-radius:20px;
+    text-align:center;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
 
-.servico:hover{
-    transform:translateY(-8px);
+.servico h3{
+    font-size:1.1rem;
+    margin-top:15px;
 }
 
 .servico i{
-    font-size:2.5rem;
-    color:var(--laranja);
-    margin-bottom:20px;
+    font-size:2rem;
+    color:#fc940e;
 }
 
 /* ==========================
@@ -578,6 +574,26 @@ footer{
         background-position:center center;
         background-repeat:no-repeat;
 
+    }
+
+}
+@media(max-width:768px){
+
+    .servicos-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .servico{
+        padding:20px 10px;
+    }
+
+    .servico h3{
+        font-size:.9rem;
+    }
+
+    .servico i{
+        font-size:1.7rem;
     }
 
 }
